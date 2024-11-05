@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Sectionings */
+section {
+    height: 100vh;
+}
+
+
+
+
+
+
+/* NAVS */
+
+nav img {
+    margin: 25px;
+    width: 70px;
+}
+
+
+nav {
+    padding-right: 20px;
+    background-color: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+
+    background: #F3E5AB;
+
+}
+
+
+nav a {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+.orderbutton {
+    border-radius: 50px;
+    background: #FFD700;
+}
+
+/*!! nav items!! */
+a:link,
+a:visited {
+    background-color: none;
+    color: #000000;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+nav a:hover {
+    color: #885b46;
+}
+
+
+
+/* BELOW NAV */
+.belownav {
+    background: #3E2723;
+}
+
+.belownav img {
+    padding: 5px;
+    width: 80px;
+    display: block;
+    margin: auto;
+
+}
+
+nav,
+.belownav {
+    position: sticky;
+
+}
+
+
+/* MAIN BACKGROUND */
+body {
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#one {
+
+    background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+/* FLOATING BUTTON */
+
+
+.floatingbutton {
+    background-color: #FFD700;
+    position: fixed;
+    width: 250px;
+    height: 60px;
+    flex-shrink: 0;
+
+
+
+    border-radius: 50px;
+    text-align: center;
+    bottom: 1rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 20;
+
+}
+
+
+/* Section 2 */
+.qrtbg img {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -100vh;
+    padding: 35vh;
+
+}
+
+
+.box {
+    width: 100vh;
+    background-color: #3E2723;
+    border-radius: 20px;
+    z-index: 1;
+
+
+}
+
+
+.box img {
+    width: 50%;
+    height: auto;
+    padding: 50px;
+    float: left;
+    border-radius: 20px;
+}
+
+.box-content {
+
+    padding: 5rem;
+    text-align: center;
+    color: #ffff;
+
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/* SHOP REDIRECT */
+/* BUTTON */
+.shopdirect {
+    background-color: #FFD700;
+    position: absolute;
+    width: 20vh;
+    height: 60px;
+
+
+    border-radius: 50px;
+    text-align: center;
+
+    margin-left: -10vh;
+    margin-top: 5vh;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 10;
+
+}
+
+
+/* Thirds Section | CARD LISTING */
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+
+
+.card {
+    width: 60vh;
+    background-color: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+
+    border-color: #000000;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+    color: #ffff;
+
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: -.6s;
+}
+
+.card-content:hover {
+    opacity: 1;
+}
+
+
+
+
+/* CONTACT US */
+#four {
+    height: 80vh;
+}
+
+.contact-us {
+    background-color: #F3E5AB;
+    padding: 10px;
+    width: 80%;
+    margin: 20vh auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    border-radius: 20px;
+}
+
+.contactbox {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 20px;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #ffffff;
+
+}
+
+.contact-us h1 {
+    margin-bottom: 10px
+}
+
+.contact-us p {
+    margin-bottom: 10px
+}
+
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #000000;
+}
+
+.contact-us button {
+    background: #FFD700;
+    width: 100px;
+    border: none;
+    outline: none;
+    z-index: 2;
+    height: 35px;
+
+
+    border-radius: 20px;
+}
+
+
+
+/* FOOTER */
+footer {
+    background-color: #F3E5AB;
+    text-align: center;
+    bottom: 0;
+
+    width: 100%;
+    height: 15vh;
+    display: flex;
+
+}
+
+footer img {
+    padding-top: 4vh;
+    margin-left: 40px;
+    width: 5vh;
+    height: 10vh;
+
+
+
+}
+
+.footericons {
+    color: #000;
+    text-align: left;
+    font-size: 25px;
+    padding-left: 5vh;
+    padding-top: 4vh;
+
+}
+
+.footertext {
+    padding-left: 5vh;
+    padding-top: 6vh;
+    text-align: right;
+    display: flex;
+}

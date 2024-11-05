@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="checkout.css">
+    <script defer src="js.js"></script>
+</head>
+
+<body>
+    <div class="error"></div>
+    <div class="container">
+        <form name="MyForm" action="">
+            <div class="row">
+                <!-- ONE -->
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+
+                    <div class="inputBox">
+                        <label for="fname">First Name:</label>
+                        <input type="text" name="fname" placeholder="Mart Cart" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" placeholder="Mart Cart" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="example@example.com" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="pnumber">Phone Number:</label>
+                        <input type="text" name="pnumber" placeholder="+99999" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="address">Address:</label>
+                        <input type="text" name="address" placeholder="Room/House# - Street - Barangay" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="city">City:</label>
+                            <input type="text" name="city" placeholder="india" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="zipcode">Zip Code:</label>
+                            <input type="text" name="zipcode" placeholder="123 456" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TWO -->
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+
+                    <div class="inputBox">
+                        <span>Card Accepted:</span>
+                        <img src="card_img.png" alt="cards">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="ncard">Name on Card:</label>
+                        <input type="text" name="ncard" placeholder="Mr. Mart Cart" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="nbcard">Credit Card Number:</label>
+                        <input type="text" name="nbcard" placeholder="1111-2222-3333-4444" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="expmonth">Exp Month:</label>
+                        <input type="month" name="expmonth" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="expyear">Exp Year:</label>
+                            <input type="date" name="expyear" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="CW">CVV:</label>
+                            <input type="text" name="CW" placeholder="1234" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Proceed to Check Out" class="submit-btn">
+        </form>
+    </div>
+</body>
+
+</html>
